@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: antiquewhite;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: darkcyan;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.nav-items {
+    height: 50px;
+    background-color: cyan;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.p-link {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+  }
+
+.pattern-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 35vh;
+    padding: 0rem;
+}
+
+.col-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: darkcyan;
+    padding: 0rem 2rem;
+    text-wrap: wrap;
+}
+
+.col-left h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.col-left p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.col-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+.h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h2 {
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    /* Use flex-direction to stack the navbar, sidebar, and body */
+    main,
+    nav {
+      flex-direction: column;
+    }
+    /* Make the sidebar stack below the body */
+    aside {
+      order: 2;
+    }
+    /* Change the header background */
+    header {
+      background: #772014;
+    }
+    /* Change the navbar and footer background */
+    nav,
+    footer {
+      background-color: #bb8588;
+    }
+  }
+    

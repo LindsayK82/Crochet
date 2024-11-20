@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/components/Request/r.css">
+    <title>Request Form</title>
+</head>
+<body class="r-body">
+    <div class="logo">Welcome to The Whimsical Hooker's Page!</div>
+    <nav>
+        
+        <div class="nav-items">
+            <a href="/index.html">Home</a>
+            <a href="/components/About/index.html">About Us</a>
+            <a href="/components/Patterns/index.html">Patterns</a>
+            <a href="/components/Contact/index.html">Contact Us</a>
+            <a href="/components/Request/">Request a Pattern</a>
+        </div>
+    </nav>
+    <h1>Request a pattern with the form below!</h1>
+    <p>$15 due upon email reply verifying info. Payment info will be in the email.</p>
+    <p>Please include your name and email, and in the message please describe what you are looking for (including size, details, colors, and realistic or whimsical). Thank you!</p>
+    <form action="https://formsubmit.co/lindsayklug20@yahoo.com" method="POST">
+        <input type="hidden" value="New Pattern Request">
+        <input type="text" name="name" placeholder="Name" required>
+        <br />
+        <input type="email" name="email" placeholder="Email" required>
+        <br />
+        <textarea rows="10" name="subject" placeholder="I would like a whimiscal dinosaur in green with spikes along his back."></textarea>
+        <br />
+        <button type="submit">Submit</button>
+   </form>
+</body>
+</html>
